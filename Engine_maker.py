@@ -1,5 +1,7 @@
 import json 
 
+default_formats = {}
+
 data_path = format.json
 
 def load_json(): 
