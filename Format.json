@@ -1,21 +1,9 @@
 {
-  "formats" : [
-    "inline":{
-      "1":"inline",
-      "2":"i"
-    },
-    "v":{
-      "1":"v"
-    },
-    "vr":{
-      "1":"vr"
-    },
-    "w":{
-      "1":"w"
-    },
-    "rotary":{
-      "1":"rotary", 
-      "2":"r"
-    }
-  ]
+  "formats": {
+    "inline": ["inline", "i"],
+    "v": ["v"],
+    "vr": ["vr"],
+    "w": ["w"],
+    "rotary": ["rotary", "r"]
+  }
 }
