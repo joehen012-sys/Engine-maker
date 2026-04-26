@@ -1,6 +1,6 @@
 import json 
 
-data_path = engine_stuff.json
+data_path = format.json
 
 def load_json(): 
     global data_path
