@@ -1,19 +1,16 @@
-import json 
+import json
+from pathlib import Path
 
-default_formats = {}
+DATA_PATH = Path(__file__).with_name("Format.json")
 
-data_path = format.json
+def load_json():
+    with DATA_PATH.open("r", encoding="utf-8") as f:
+        return json.load(f)
 
-def load_json(): 
-    global data_path
-    path = data_path
-    with open(path, 'r') as file: # 3. Open file
-        data = json.load(file) # 4. Use json.load()
-    return data
-  
-load_json()
+data = load_json()
+formats = data["formats"]
 
-def engine_make():
+def basic_engine_maker():
   format = Input("format (ex. inline, V, W, rotary): ")
   size = input("size: ")
   if format == str(inline):
@@ -27,4 +24,6 @@ def engine_make():
   elif format == str(rotary):
     pass
   else:
+    pass
+def advanced_engine_maker():
     pass
